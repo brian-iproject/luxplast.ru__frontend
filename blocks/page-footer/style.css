@@ -1,0 +1,53 @@
+.page-footer {
+	text-align: center;
+}
+
+	.page-footer__inner {
+		padding-bottom: 1.75em;
+		padding-top: 3em;
+	}
+
+		.page-footer__license {
+		}
+
+			.page-footer__license br {
+				display: none;
+			}
+
+		.page-footer__contraindications {
+			color: var(--color-gray--light);
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			font-size: 9vw;
+			font-weight: 300;
+			line-height: 1;
+			margin-top: 1.25em;
+			text-transform: uppercase;
+		}
+
+			.page-footer__contraindications span {
+				display: block;
+				font-size: 13.4vw;
+			}
+
+@media (min-width: 468px) {
+	.page-footer {
+	}
+
+		.page-footer__inner {
+		}
+
+			.page-footer__contraindications {
+				font-size: calc( (100vw - 290px)/(1410 - 290) * (54 - 16) + 16px);
+			}
+
+			.page-footer__contraindications span {
+				display: inline;
+				font-size: inherit;
+			}
+}
+
+@media (min-width: 768px) {
+	.page-footer__license br {
+		display: unset;
+	}
+}

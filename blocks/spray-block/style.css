@@ -1,0 +1,37 @@
+.spray-block {
+
+}
+
+	.spray-block__product {
+		margin-bottom: 30px;
+	}
+
+@media (min-width: 768px) {
+	.spray-block {
+		align-items: stretch;
+		display: flex;
+		margin: 0 -15px;
+	}
+
+		.spray-block__product {
+			margin: -15px 0;
+			padding: 0 15px;
+			width: 33.33333%;
+		}
+
+			.spray-block__product .product-list,
+			.spray-block__product .product-list__item {
+				height: 100%;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+
+		.spray-block__video {
+			padding: 0 15px;
+			width: 66.66666%;
+		}
+
+			.spray-block__video img {
+				display: block;
+			}
+}

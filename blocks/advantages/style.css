@@ -1,0 +1,62 @@
+.advantages {
+	background-image: var(--background-waves),
+										var(--gradient-green);
+	background-position: 50% 50%;
+	border-radius: 1.25em;
+	color: #fff;
+	padding: 3.5em 2em;
+}
+
+	.advantages .h1 {
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg width='72' height='13' viewBox='0 0 72 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3 6.49949C3 6.49949 14.5 15.9993 36 6.49949C57.5 -3.00034 69 6.49949 69 6.49949' stroke='rgb(173, 226, 59)' stroke-width='3' stroke-miterlimit='2.03203' stroke-linecap='square'/></svg>");
+		color: #fff;
+	}
+
+	.advantages__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -8px -30px -8px;
+		text-align: center;
+	}
+
+		.advantages__item {
+			flex: 0 0 50%;
+			margin-bottom: 30px;
+			max-width: 50%;
+			padding: 0 8px;
+		}
+
+			.advantages__icon {
+				margin-bottom: 1.625em;
+			}
+
+				.advantages__icon svg {
+					fill: #fff;
+					max-height: 53px;
+					max-width: 58px;
+				}
+
+			.advantages__title {
+				font-size: var(--font-size);
+			}
+
+@media (min-width: 768px) {
+	.advantages__list {
+		margin: 0 -15px -30px -15px;
+	}
+
+		.advantages__item {
+			flex: 0 0 25%;
+			max-width: 25%;
+			padding: 0 15px;
+		}
+
+			.advantages__title {
+				font-size: var(--font-size--x-large);
+			}
+
+			.advantages__icon svg {
+				max-height: 97px;
+				max-width: 96px;
+			}
+}

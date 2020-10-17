@@ -1,0 +1,135 @@
+.site-popup .fancybox-content {
+	box-sizing: border-box;
+}
+
+	.site-popup .fancybox-content {
+		max-width: 1150px;
+		padding: 5.625em 2.75em;
+		width: 100%;
+	}
+	
+	.site-popup .fancybox-content * {
+		box-sizing: inherit;
+	}
+	
+.product-card {
+	margin: 0 -15px;
+	max-width: 1150px;
+}
+
+	.product-card__image {
+		margin-bottom: 2em;
+		padding: 0 15px;
+	}
+	
+		.product-card__image img {
+			display: block;
+			margin: 0 auto;
+			max-height: 358px;
+			max-width: 100%;
+			padding: 0 15px;
+		}
+		
+		.product-card__types {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 2em;
+		}
+		
+			.product-card__types svg {
+				fill: var(--color-gray);
+				margin: 0 1em;
+			}
+	
+	.product-card__info {
+	
+	}
+	
+		.product-card__description {
+			margin: 2em 0;
+		}
+		
+			.product-card__description p {
+				margin: .5em 0;
+			}
+	
+		.product-card__props {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+			line-height: 1.2;
+			margin: 2.5em 0;
+			padding: 0;
+		}
+
+			.product-card__props dt {
+				border-bottom: 1px dotted #cdced2;
+				flex: 0 0 60%;
+				font-weight: 500;
+				margin: 0 0 .75em 0;
+				max-width: 60%;
+				padding: 0 10px 0 0;
+			}
+
+			.product-card__props dd {
+				flex: 0 0 40%;
+				margin: 0 0 .75em 0;
+				max-width: 40%;
+				padding: 0 0 0 10px;
+			}
+
+				.product-card__props span {
+					background: #fff;
+					bottom: -2px;
+					position: relative;
+				}
+
+				
+@media (min-width: 768px) {
+	.product-card {
+		align-items: stretch;
+		display: flex;
+	}
+	
+		.product-card__image {
+			flex: 0 0 38%;
+			margin-bottom: 0;
+			max-width: 38%;
+		}
+		
+		.product-card__info {
+			flex: 0 0 52%;
+			max-width: 52%;
+		}
+}
+
+.where-buy-pc {
+}
+
+	.where-buy-pc__inner {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -.625em -3em -.625em;
+	}
+
+		.where-buy-pc__item {
+			margin-bottom: 3em;
+			padding: 0 .625em;
+		}
+
+		.where-buy-pc a {
+			outline: none;
+		}
+
+			.where-buy-pc img {
+				display: block;
+			}
+
+@media (min-width: 1200px) {
+	.where-buy-pc__inner {
+		flex-wrap: nowrap;
+	}
+}

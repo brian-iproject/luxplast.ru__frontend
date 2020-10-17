@@ -1,0 +1,34 @@
+<div class="site-form">
+	<form method="post" enctype="multipart/form-data" action="">
+		<div class="site-form__inner">
+			<div class="h3">Оставить отзыв</div>
+			<div class="site-form__item">
+				<input type="text" value="" required placeholder="Имя*" class="site-form__field-text js-moving-placeholder">
+			</div>
+			<div class="site-form__item">
+				<input type="text" value="" name="PHONE" placeholder="Телефон" class="site-form__field-text js-moving-placeholder">
+			</div>
+			<div class="site-form__item">
+				<input type="email" value="" required placeholder="E-mail*" class="site-form__field-text js-moving-placeholder">
+			</div>
+			<div class="site-form__item">
+				<textarea required placeholder="Ваш отзыв*" class="site-form__field-textarea js-moving-placeholder"></textarea>
+			</div>
+			<div class="site-form__item">
+				<input type="file">
+				<div class="site-form__file-params">
+					<div>Максимальный размер файла - 1 Мб</div>
+				</div>
+			</div>
+			<div class="site-form__item site-form__item--privacy-policy">
+				<input type="checkbox" required checked class="site-form__field-checkbox"> <span>Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>.</span>
+			</div>
+			<div class="site-form__item site-form__item--button">
+				<button class="site-button site-button--fill site-form__field-button"><span class="site-button__text">Отправить</span></button>
+			</div>
+			<div class="site-form__item site-form__item--required-text">
+				<span class="star-required">*</span> — обязательные поля
+			</div>
+		</div>
+	</form>
+</div>

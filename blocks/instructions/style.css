@@ -1,0 +1,167 @@
+.instructions {
+	background-image: var(--background-waves),
+										var(--gradient-turquoise);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 1.25em;
+	color: #fff;
+	padding: 3.5em 2em;
+}
+
+	.instructions__title {
+		color: #fff;
+		font-size: 26px;
+		margin-bottom: .7em;
+		text-align: center;
+	}
+
+	.instructions__tabs {
+	}
+
+	.instructions__panels {
+	}
+
+		.instructions__panels-item {
+			display: none;
+		}
+
+			.instructions__panels-item.-is-active {
+				display: block;
+			}
+
+@media (min-width: 1200px) {
+	.instructions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+		.instructions__title {
+			flex: 0 0 40%;
+			max-width: 40%;
+		}
+
+		.instructions__tabs {
+			flex: 0 0 auto;
+		}
+
+		.instructions__panels {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+}
+
+
+
+
+
+
+.instructions-list {
+	counter-reset: item;
+	margin: 44px -15px -30px -15px;
+	text-align: center;
+}
+
+	.instructions-list__item {
+		margin-bottom: 30px;
+		padding: 0 15px;
+	}
+
+		.instructions-list__item:before {
+			content: counters(item,"");
+			counter-increment: item;
+			display: block;
+			font-size: 24px;
+			margin-bottom: .5em;
+		}
+
+		.instructions-list__icon {
+			align-items: center;
+			display: flex;
+			height: 60px;
+			justify-content: center;
+			margin-bottom: 1em;
+			width: 100%;
+		}
+
+		.instructions-list__title {
+			font-size: var(--font-size--large);
+			line-height: 1.4;
+		}
+
+@media (min-width: 768px) {
+	.instructions-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+		.instructions-list__item {
+			flex: 1 0 33.33333%;
+			max-width: 50%;
+		}
+
+			.instructions__title {
+				font-size: 30px;
+				text-align: left;
+			}
+}
+
+@media (min-width: 1200px) {
+	.instructions-list__item {
+		flex: 1 0 20%;
+	}
+}
+
+
+
+.instructions-panels {
+}
+
+	.instructions-panels__item {
+		display: none;
+	}
+
+		.instructions-panels__item.-is-active {
+			display: block;
+		}
+
+
+
+
+
+
+
+
+.instructions-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -4px -8px -4px;
+}
+
+	.instructions-tabs__item {
+		background: none;
+		border: 2px solid #fff;
+		border-radius: 2.375em;
+		color: #fff;
+		cursor: pointer;
+		line-height: 1;
+		margin: 0 4px 8px 4px;
+		outline: none;
+		padding: 0.6875em 1em;
+		transition: .3s;
+	}
+
+			.instructions-tabs__item.-is-active,
+			.instructions-tabs__item:hover,
+			.instructions-tabs__item:active {
+				background: #fff;
+				color: var(--color-black);
+			}
+
+@media (min-width: 768px) {
+	.instructions-tabs {
+		justify-content: flex-start;
+	}
+}

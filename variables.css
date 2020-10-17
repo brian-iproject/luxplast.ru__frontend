@@ -1,0 +1,31 @@
+:root {
+	--screen-width: calc(100vw - 17px)px;
+
+	--font-size--x-large: 18px;
+	--font-size--large: 16px;
+	--font-size: 14px;
+	--font-size--middle: 12px;
+	--font-size--small: 12px;
+	--font-family-primary: 'Montserrat', sans-serif;
+
+	--color-primary: #32B197;
+	--color-black: #1E2123;
+	--color-gray: #7A848C;
+	--color-gray--light: #CAD7E0;
+	
+	--gradient-green: linear-gradient(50.53deg, #019A82 7.05%, #4FCB79 79.87%);
+	--gradient-cyan: linear-gradient(50.53deg, #2593B6 7.05%, #61C3E2 79.87%);
+	--gradient-turquoise: linear-gradient(50.53deg, #2EA2A9 7.05%, #2ECCB3 79.87%);
+
+	--background-waves: url("data:image/svg+xml;charset=utf-8,<svg width='1280' height='435' viewBox='0 0 1280 435' fill='none' xmlns='http://www.w3.org/2000/svg'><g style='mix-blend-mode:soft-light' opacity='0.2'><path opacity='0.4' d='M-726.151 326.204L-722.223 202.907C839.014 -300.954 841.899 300.655 2106.02 36.6639L2095.75 359.084C1177.39 435.824 835.086 -177.657 -726.151 326.204Z' fill='white'/><path opacity='0.7' d='M-824.528 94.8644L-813.638 436.706C431.765 113.137 475.246 785.897 2001.39 188.175L1996.2 25.3607C413.741 576.742 241.26 -81.2123 -824.528 94.8644Z' fill='white'/><path opacity='0.9' d='M2005.99 89.7212L2004.62 156.829C938.273 -1.70293 706.041 552.94 -817.496 106.776L-817.496 50.4644C700.462 500.841 939.638 -68.5022 2005.99 89.7212Z' fill='white'/></g></svg>");
+}
+
+@media (min-width: 992px) {
+	:root {
+		--font-size--x-large: 20px;
+		--font-size--large: 18px;
+		--font-size: 16px;
+		--font-size--middle: 14px;
+		--font-size--small: 12px;
+	}
+}

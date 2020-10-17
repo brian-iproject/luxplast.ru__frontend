@@ -1,0 +1,138 @@
+.product-filter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 30px 40px 30px;
+	text-align: center;
+}
+
+	.product-filter__item {
+		cursor: pointer;
+		flex: 0 0 33.33333%;
+		margin-bottom: 30px;
+		max-width: 33.33333%;
+		outline: none;
+		padding: 0 15px;
+	}
+	
+		.product-filter__icon {
+			align-items: center;
+			display: flex;
+			height: 38px;
+			justify-content: center;
+			margin-bottom: .75em;
+		}
+		
+			.product-filter__icon svg {
+				fill: var(--color-gray);
+			}
+
+		.product-filter__link {
+			color: var(--color-primary);
+			line-height: 1.4;
+			text-decoration-color: currentColor;
+			text-decoration-line: underline;
+			text-decoration-style: dotted;
+			transition: .3s;
+		}
+
+			.product-filter__item:hover .product-filter__link,
+			.product-filter__item.-is-active .product-filter__link {
+				color: var(--color-black);
+				text-decoration-color: transparent;
+			}
+
+@media (min-width: 768px) {
+	.product-filter__item {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.product-filter__item {
+		flex: 0 0 14.28571%;
+		max-width: 14.28571%;
+	}
+}
+
+		.product-filter__arrow {
+			background: none;
+			border: none;
+			border-bottom: 3px solid var(--color-primary);
+			cursor: pointer;
+			height: 1.5em;
+			margin: -.75em 0 0 0;
+			outline: none;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			width: 1.5em;
+			z-index: 99;
+		}
+
+			.product-filter__arrow--prev {
+				border-left: 3px solid var(--color-primary);
+				left: -1.5em;
+				transform: rotate(45deg);
+			}
+
+			.product-filter__arrow--next {
+				border-right: 3px solid var(--color-primary);
+				right: -1.5em;
+				transform: rotate(-45deg);
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+.product-list__arrow {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin: -8px 0 0 0;
+	outline: none;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	z-index: 99;
+}
+
+	.product-list__arrow--prev {
+		left: -10px;
+	}
+
+	.product-list__arrow--next {
+		right: -10px;
+		transform: scale(-1, 1);
+	}
+
+	.product-list__arrow .svg-icon {
+		fill: #fff;
+		height: 2.75em;
+		width: 2.75em;
+	}
+
+@media (min-width: 1380px) {
+	.product-list__arrow {
+		width: auto;
+	}
+	
+		.product-list__arrow--prev {
+			left: -50px;
+		}
+	
+		.product-list__arrow--next {
+			right: -50px;
+		}
+}

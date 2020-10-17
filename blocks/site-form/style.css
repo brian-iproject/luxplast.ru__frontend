@@ -1,0 +1,133 @@
+.site-form {
+}
+
+	.site-form__inner {
+	}
+	
+		.site-form__error {
+			color: #ff0000;
+			font-size: var(--font-size--small);
+		}
+	
+		.site-form__item {
+			color: var(--color-black);
+			position: relative;
+		}
+		
+			.site-form__item + .site-form__item {
+				margin-top: 1.25em;
+			}
+			
+			.site-form__item .moving-placeholder__label {
+				color: var(--color-black);
+			}
+			
+			.site-form__item--privacy-policy,
+			.site-form__item--required-text {
+				display: flex;
+				font-size: var(--font-size--middle);
+			}
+			
+				.site-form__item--privacy-policy .site-form__field-checkbox {
+					flex-grow: 0;
+					flex-shrink: 0;
+					margin-right: 1em;
+				}
+				
+				.site-form__item--privacy-policy a {
+					color: inherit;
+					text-decoration-color: currentColor;
+				}
+				
+					.site-form__item--privacy-policy a:hover {
+						text-decoration-color: transparent;
+					}
+			
+			.site-form__item + .site-form__item--button {
+				margin-top: 2.5em;
+			}
+
+			.site-form__item--error {
+				padding-bottom: 1.5em;
+			}
+			
+				.site-form__item .site-form__error {
+					bottom: 0;
+					left: 0;
+					position: absolute;
+				}
+			
+			.site-form__field-text,
+			.site-form__field-email,
+			.site-form__field-textarea {
+				background: #fff;
+				border: 1px solid var(--color-gray--light);
+				color: inherit;
+				font-family: inherit;
+				font-size: var(--font-size--middle);
+				max-width: 100%;
+				outline: none;
+				padding: 1em 1.2em;
+				width: 100%;
+			}
+			
+			.site-form__field-textarea {
+				min-height: 8.7em;
+				outline: none;
+			}
+
+				.site-form__field-text--error,
+				.site-form__field-email--error,
+				.site-form__field-textarea--error {
+					border-color: #ff0000;
+				}
+
+				[class*=site-form__field-]::-webkit-input-placeholder { color: rgba(255, 255, 255, .7); }
+				[class*=site-form__field-]::-moz-placeholder { color: rgba(255, 255, 255, .7); }
+				[class*=site-form__field-]:-moz-placeholder { color: rgba(255, 255, 255, .7); }
+				[class*=site-form__field-]:-ms-input-placeholder { color: rgba(255, 255, 255, .7); }
+			
+			.site-form__field-checkbox {
+				-webkit-appearance: none;
+				background: none;
+				border: none;
+				cursor: pointer;
+				height: 1.25em;
+				margin-right: .75em;
+				outline: none;
+				position: relative;
+				vertical-align: middle;
+				width: 1.25em;
+			}
+
+				.site-form__field-checkbox:before {
+					background: rgba(255, 255, 255, .02);
+					border: 1px solid var(--color-gray--light);
+					border-radius: .25em;
+					content: '';
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
+				.site-form__field-checkbox:checked:after {
+					border-bottom: 2px solid var(--color-gray);
+					border-left: 2px solid var(--color-gray);
+					content: "";
+					height: .45em;
+					margin: .3em 0 0 .25em;
+					position: absolute;
+					transform: rotate(-45deg);
+					width: .7em;
+				}
+				
+			.site-form__file-params {
+				font-size: var(--font-size--small);
+				font-style: italic;
+				margin-top: .5em;
+			}
+
+			.site-form__field-button {
+			}
